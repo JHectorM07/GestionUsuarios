@@ -1,0 +1,21 @@
+body.bg-login {
+    background-color: #0b4f57; /* Color de fondo según tu wireframe */
+    min-height: 100vh;
+}
+
+.login-card {
+    background: transparent;
+    border: none;
+    max-width: 400px;
+    width: 100%;
+}
+
+.login-card label {
+    color: #ffffff;
+    font-weight: 500;
+}
+
+.login-card .form-control {
+    border-radius: 6px;
+    padding: 0.65rem 1rem;
+}
