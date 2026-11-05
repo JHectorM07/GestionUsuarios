@@ -36,6 +36,6 @@ class Conexion {
 }
 
 //Prueba temporal de conexion
-$prueba = new Conexion();
-$db = $prueba->getConexion();
-if($db) {echo "Conexion exitosa";}
+//$prueba = new Conexion();
+//$db = $prueba->getConexion();
+//if($db) {echo "Conexion exitosa";}

@@ -5,11 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Iniciar Sesión - Sistema TI</title>
     <!-- Bootstrap local -->
-    <link rel="stylesheet" href="../../../public/assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/APPGESTIONUSUARIOS/public/assets/bootstrap/css/bootstrap.min.css">
     <!-- Iconos de Bootstrap (Opcionales via CDN o locales) -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <!-- Estilos propios -->
-    <link rel="stylesheet" href="../../../public/assets/css/custom.css">
+    <link rel="stylesheet" href="/APPGESTIONUSUARIOS/public/assets/css/custom.css">
 </head>
 <body class="bg-login d-flex flex-column justify-content-between min-vh-100">
 
@@ -31,7 +31,7 @@
                 <i class="bi bi-person-circle text-white" style="font-size: 5rem; color: aliceblue;"></i>
             </div>
 
-            <form action="../../public/index.php?controlador=login&accion=ingresar" method="POST">
+            <form action="/APPGESTIONUSUARIOS/public/index.php?controlador=login&accion=ingresar" method="POST">
                 
                 <!-- Input Usuario -->
                 <div class="mb-3">
@@ -67,20 +67,6 @@
 
     <!-- JS de Bootstrap -->
     <script src="../../../public/assets/bootstrap/js/bootstrap.bundle.min.js"></script>
-    
-    <!-- Script para alternar visibilidad de la contraseña 
-    <script>
-        const btnToggle = document.getElementById('btnTogglePassword');
-        const inputPass = document.getElementById('password');
-        const iconEye = document.getElementById('iconEye');
 
-        btnToggle.addEventListener('click', () => {
-            const isPassword = inputPass.type === 'password';
-            inputPass.type = isPassword ? 'text' : 'password';
-            iconEye.classList.toggle('bi-eye', !isPassword);
-            iconEye.classList.toggle('bi-eye-slash', isPassword);
-        });
-    </script>
-    -->
 </body>
 </html> 
