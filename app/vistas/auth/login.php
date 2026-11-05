@@ -68,7 +68,7 @@
     <!-- JS de Bootstrap -->
     <script src="../../../public/assets/bootstrap/js/bootstrap.bundle.min.js"></script>
     
-    <!-- Script para alternar visibilidad de la contraseña -->
+    <!-- Script para alternar visibilidad de la contraseña 
     <script>
         const btnToggle = document.getElementById('btnTogglePassword');
         const inputPass = document.getElementById('password');
@@ -81,5 +81,6 @@
             iconEye.classList.toggle('bi-eye-slash', isPassword);
         });
     </script>
+    -->
 </body>
 </html> 
