@@ -5,11 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Iniciar Sesión - Sistema TI</title>
     <!-- Bootstrap local -->
-    <link rel="stylesheet" href="/APPGESTIONUSUARIOS/public/assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/appgestionusuarios/public/assets/bootstrap/css/bootstrap.min.css">
     <!-- Iconos de Bootstrap (Opcionales via CDN o locales) -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <!-- Estilos propios -->
-    <link rel="stylesheet" href="/APPGESTIONUSUARIOS/public/assets/css/custom.css">
+    <link rel="stylesheet" href="/appgestionusuarios/public/assets/css/custom.css">
 </head>
 <body class="bg-login d-flex flex-column justify-content-between min-vh-100">
 
@@ -17,8 +17,8 @@
     <header class="p-3">
         <div class="container-fluid">
             <!-- Reemplaza el src con la ruta de tu logo -->
-            <img src="../../public/assets/img/logo.png" alt="Logo Empresa" height="40" class="img-fluid" onerror="this.style.display='none'">
-            <span class="text-white fw-bold ms-2 h5">MiEmpresa TI</span>
+            <img src="/AppG/public/assets/img/logo.png" alt="Logo Empresa" height="40" class="img-fluid" onerror="this.style.display='none'">
+            <span class="text-white fw-bold ms-2 h5">Gestion de usuarios</span>
         </div>
     </header>
 
@@ -31,7 +31,7 @@
                 <i class="bi bi-person-circle text-white" style="font-size: 5rem; color: aliceblue;"></i>
             </div>
 
-            <form action="/APPGESTIONUSUARIOS/public/index.php?controlador=login&accion=ingresar" method="POST">
+            <form action="/appgestionusuarios/public/index.php?controlador=login&accion=ingresar" method="POST">
                 
                 <!-- Input Usuario -->
                 <div class="mb-3">
@@ -60,6 +60,15 @@
             </form>
         </div>
     </main>
+
+    <?php if(isset($_SESSION['error_login'])): ?>
+                <div class="text-center" style="color: white;">
+                        <?php 
+                            echo $_SESSION['error_login'];
+                            unset($_SESSION['error_login']);
+                        ?>
+                </div>
+            <?php endif; ?>
 
     <footer class="text-center text-white-50 py-3 small">
         &copy; <?php echo date('Y'); ?> Sistema de Gestión TI

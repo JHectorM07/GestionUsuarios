@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Panel de Administración - MiEmpresa TI</title>
 
-   <link rel="stylesheet" href="/AppGestionUsuarios/public/assets/bootstrap/css/bootstrap.min.css">
+   <link rel="stylesheet" href="/appgestionusuarios/public/assets/bootstrap/css/bootstrap.min.css">
     
     <!-- Iconos de Bootstrap -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
@@ -56,7 +56,7 @@
             <ul class="dropdown-menu dropdown-menu-end text-small shadow">
                 <li><a class="dropdown-item" href="#"><i class="bi bi-person me-2"></i>Perfil</a></li>
                 <li><hr class="dropdown-divider"></li>
-                <li><a class="dropdown-item text-danger" href="/APPGESTIONUSUARIOS/public/index.php?controlador=login&accion=salir"><i class="bi bi-box-arrow-right me-2"></i>Cerrar sesión</a></li>
+                <li><a class="dropdown-item text-danger" href="/appgestionusuarios/public/index.php?controlador=login&accion=salir"><i class="bi bi-box-arrow-right me-2"></i>Cerrar sesión</a></li>
             </ul>
         </div>
     </header>
@@ -69,32 +69,32 @@
             <aside class="col-md-3 col-lg-2 sidebar p-3 d-flex flex-column">
                 <ul class="nav nav-pills flex-column mb-auto">
                     <li class="nav-item">
-                        <a href="/APPGESTIONUSUARIOS/public/index.php?controlador=dashboard" class="nav-link active">
+                        <a href="/appgestionusuarios/public/index.php?controlador=dashboard" class="nav-link active">
                             <i class="bi bi-house-door me-2"></i> Inicio
                         </a>
                     </li>
                     <li>
-                        <a href="/APPGESTIONUSUARIOS/public/index.php?controlador=clientes" class="nav-link">
+                        <a href="/appgestionusuarios/public/index.php?controlador=clientes" class="nav-link">
                             <i class="bi bi-people me-2"></i> Clientes
                         </a>
                     </li>
                     <li>
-                        <a href="/APPGESTIONUSUARIOS/public/index.php?controlador=contratos" class="nav-link">
+                        <a href="/appgestionusuarios/public/index.php?controlador=contratos" class="nav-link">
                             <i class="bi bi-file-earmark-text me-2"></i> Contratos
                         </a>
                     </li>
                     <li>
-                        <a href="/APPGESTIONUSUARIOS/public/index.php?controlador=servicios" class="nav-link">
+                        <a href="/appgestionusuarios/public/index.php?controlador=servicios" class="nav-link">
                             <i class="bi bi-gear-wide-connected me-2"></i> Servicios
                         </a>
                     </li>
                     <li>
-                        <a href="/APPGESTIONUSUARIOS/public/index.php?controlador=productos" class="nav-link">
+                        <a href="/appgestionusuarios/public/index.php?controlador=productos" class="nav-link">
                             <i class="bi bi-box-seam me-2"></i> Productos
                         </a>
                     </li>
                     <li>
-                        <a href="/APPGESTIONUSUARIOS/public/index.php?controlador=cobros" class="nav-link">
+                        <a href="/appgestionusuarios/public/index.php?controlador=cobros" class="nav-link">
                             <i class="bi bi-cash-stack me-2"></i> Cobros
                         </a>
                     </li>
@@ -103,7 +103,7 @@
                 <hr class="text-secondary">
 
                 <div>
-                    <a href="/APPGESTIONUSUARIOS/public/index.php?controlador=login&accion=salir" class="nav-link text-danger fw-semibold">
+                    <a href="/appgestionusuarios/public/index.php?controlador=login&accion=salir" class="nav-link text-danger fw-semibold">
                         <i class="bi bi-box-arrow-right me-2"></i> Salir
                     </a>
                 </div>
@@ -160,6 +160,6 @@
         </div>
     </div>
 
-    <script src="/AppGestionUsuarios/public/assets/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="/appgestionusuarios/public/assets/bootstrap/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

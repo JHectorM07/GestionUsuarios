@@ -37,10 +37,10 @@ class AuthController {
                 $_SESSION['usuario_nombre'] = $datosUsuario['nombres'];
 
                 // Redireccionar al Dashboard principal
-                header("Location: /APPGESTIONUSUARIOS/public/index.php?controlador=dashboard");
+                header("Location: /appgestionusuarios/public/index.php?controlador=dashboard");
                 exit();
             } else{
-                $this->redireccionarConError("Usuario o contraseña incorrectos");
+                $this->redireccionarConError("Credenciales invalidas");
             }
         }
 
@@ -49,13 +49,13 @@ class AuthController {
     // Finalizar sesión (REPASAR)
     public function Salir(){
         session_destroy();
-        header("Location: /APPGESTIONUSUARIOS/public/index.php?controlador=login");
+        header("Location: /appgestionusuarios/public/index.php?controlador=login");
         exit();
     }
 
     private function redireccionarConError($mensaje){
         $_SESSION['error_login'] = $mensaje;
-        header("Location: /APPGESTIONUSUARIOS/public/index.php?controlador=login");
+        header("Location: /appgestionusuarios/public/index.php?controlador=login");
         exit();
     }
    
